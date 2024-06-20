@@ -1,0 +1,66 @@
+- 
+  var productsList = [
+    { 
+      id: 1,
+      name: 'Купель Exelent 250',
+      desc: 'Эта купель – лучшее, что может украсить ваш загородный участок. Инновации, стиль, идеальный объем!',
+      tags: ['Термокрышка', 'Светодиодная подсветка', 'Печь'],
+      price: '260 000 ₽',
+      priceOld: '300 000 ₽'
+    },
+    { 
+      id: 2,
+      name: 'Купель Perfect 300',
+      desc: 'Универсальное решение в стиле европейской классики. Для дома, для дачи, для базы отдыха.',
+      tags: ['Термокрышка','Гидромассаж', 'Светодиодная подсветка', 'Печь', 'Обшивка деревом'],
+      price: '260 000 ₽',
+      priceOld: '300 000 ₽'
+    },
+    { 
+      id: 3,
+      name: 'Купель Exclusive 200',
+      desc: 'Украшение вашей бани. Идеально войдёт в стандартный дверной проём. Не требует сложного монтажа.',
+      tags: ['Термокрышка', 'Гидромассаж', 'Светодиодная подсветка', 'Печь'],
+      price: '260 000 ₽',
+      priceOld: '300 000 ₽'
+    },
+    { 
+      id: 4,
+      name: 'Купель MegaStar',
+      desc: 'Эта купель – лучшее, что может украсить ваш загородный участок. Инновации, стиль, идеальный объем!',
+      tags: ['Термокрышка','Гидромассаж', 'Светодиодная подсветка', 'Печь', 'Обшивка деревом'],
+      price: '260 000 ₽',
+      priceOld: '300 000 ₽'
+    },
+    { 
+      id: 1,
+      name: 'Купель Exelent 250',
+      desc: 'Эта купель – лучшее, что может украсить ваш загородный участок. Инновации, стиль, идеальный объем!',
+      tags: ['Термокрышка', 'Светодиодная подсветка', 'Печь'],
+      price: '260 000 ₽',
+      priceOld: '300 000 ₽'
+    },
+  ]
+
+section.products.section 
+  .container
+    .products__title.h2 Купить купель
+    .products__inner 
+      .products__slider.js-products-slider 
+        .swiper-wrapper 
+          for product in productsList
+            .products-item.swiper-slide
+              a.products-item__title(href="#")= product.name
+              .products-item__desc= product.desc
+              a(href="#").products-item__img 
+                img(src=`./images/products/product-0${product.id}.jpg`, alt=`${product.name}`) 
+              .products-item__details 
+                for tag in product.tags
+                  .products-item__detail= tag
+              .products-item__price= product.price 
+                span= product.priceOld
+              button(type="button").products-item__btn.btn.btn--wide Купить в один клик
+      button(type="button").js-products-slider-prev.common-slider-btn.common-slider-btn-prev
+        +svg(24, 24, 'arrow-left')
+      button(type="button").js-products-slider-next.common-slider-btn.common-slider-btn-next
+        +svg(24, 24, 'arrow-right')

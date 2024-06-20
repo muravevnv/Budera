@@ -1,0 +1,37 @@
+footer.footer 
+  .container 
+    .footer__left
+      nav.footer__nav 
+        ul.footer__nav-list 
+          li 
+            a(href="") Каталог
+          li 
+            a(href="") Портфолио
+          li 
+            a(href="") О компании
+          li 
+            a(href="") Сотрудничество
+          li 
+            a(href="") Где купить
+          li 
+            a(href="") Контакты
+      a.footer__logo(href="/")
+        img(src="./images/logo.svg", alt="Budera") 
+    .footer__main 
+      .footer__address Московская обл. <br> Мытищи, Фуражный проезд, д.4
+      .footer__socials.socials 
+        a.socials__item(href="#") 
+          +svg(24, 24, 'vk')
+        a.socials__item(href="#")
+          +svg(24, 24, 'ok')
+        a.socials__item(href="#")
+          +svg(24, 24, 'youtube')
+        a.socials__item(href="#")
+          +svg(24, 24, 'dzen')
+      .footer__contacts 
+        a.footer__tel(href="tel:") +7 (495) 268-12-18
+        a.footer__email(href="mailto:") info@budera.ru
+    .footer__right 
+      .footer__policy Использование данного сайта подразумевает согласие с 
+        a(href="#") Политикой конфиденциальности 
+      .footer__company © Budera 2024

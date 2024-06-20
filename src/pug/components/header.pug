@@ -1,0 +1,29 @@
+-
+  var navLinks = ['Портфолио', 'О компании', 'Сотрудничество', 'Где купить','Контакты']
+
+header.header 
+  .header__container
+    a.header__logo(href="/")
+      img(src="./images/logo.svg", alt="")
+    .header__menu
+      nav.header__nav 
+        ul.header__nav-list 
+          for link in navLinks
+            li 
+              a(href="#")= link
+      .header__contacts 
+        .header__contacts-info 
+          a.header__tel(href="tel:+74952681218") +7 (495) 268-12-18
+          a.header__mail(href="mailto:info@budera.ru") info@budera.ru
+        .header__socials.socials 
+          a.socials__item(href="#") 
+            +svg(24, 24, 'vk')
+          a.socials__item(href="#")
+            +svg(24, 24, 'ok')
+          a.socials__item(href="#")
+            +svg(24, 24, 'youtube')
+          a.socials__item(href="#")
+            +svg(24, 24, 'dzen')
+      .header__address 
+        | Московская обл. <br>
+        | Мытищи, Фуражный проезд, д.4

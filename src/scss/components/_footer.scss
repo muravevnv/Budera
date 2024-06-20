@@ -1,0 +1,138 @@
+.footer {
+  padding: 80px 0 75px;
+
+  @include media(md) {
+    padding: 60px 0 40px;
+  }
+
+  @include media(sm)  {
+    padding: 40px 0 24px;
+  }
+
+  .container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 32px;
+
+    @include media(sm) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+    }
+  }
+
+  &__left {
+    max-width: 203px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include media(sm)  {
+      order: 1;
+      padding-top: 24px;
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__main {
+    max-width: 540px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    @include media(sm)  {
+      order: 0;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+
+  &__right {
+    max-width: 162px;
+    width: 100%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+    @include media(sm)  {
+      order: 2;
+      max-width: 100%;
+      text-align: left;
+      gap: 16px;
+      padding-top: 16px;
+    }
+  }
+
+  &__nav {
+
+    &-list {
+      li {
+        font-weight: 500;
+
+        &:not(:last-of-type) {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+
+  &__address {
+    max-width: 204px;
+
+    @include media(sm)  {
+      order: 2;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  &__socials {
+    justify-content: flex-end;
+
+    @include media(sm)  {
+      order: 1;
+    }
+  }
+
+  &__contacts {
+    width: 100%;
+    margin: auto 0 0 0;
+
+    @include media(sm)  {
+      order: 0;
+    }
+  }
+
+  &__tel {
+    display: block;
+    font-size: 29px;
+    font-weight: 600;
+
+    @include media(sm)  {
+      line-height: 1;
+    }
+  }
+
+  &__email {
+    display: block;
+    margin-top: 16px;
+  }
+
+  &__policy {
+    font-size: 13px;
+    color: var(--color-grey-dark);
+    a {
+      display: inline;
+    }
+  }
+
+  &__company {
+    margin: auto 0 0 0;
+  }
+}

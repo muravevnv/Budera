@@ -1,0 +1,120 @@
+.offices {
+  &__map {
+    height: 460px;
+    width: 100%;
+    filter: grayscale(1);
+  }
+
+  &__select {
+    margin-bottom: 40px;
+
+    .choices {
+
+      &.is-open {
+
+        .choices__inner::before {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    .choices__inner {
+        padding: 4px 4px 0 4px;
+        border-radius: 8px;
+        border: 1px solid var(--color-grey);
+        padding-right: 36px;
+        position: relative;
+        
+        &::before {
+          position: absolute;
+          width: 24px;
+          height: 24px;
+          top: 12px;
+          right: 8px;
+          content: '';
+          background: url('../images/arrow-down.svg') center center / 24px no-repeat;
+          transition: var(--transition);
+          transform: rotate(0deg);
+        }
+    }
+
+    .choices__list--multiple .choices__item {
+        padding: 8px 12px;
+        height: 40px;
+        border-radius: 2px;
+        background-color: #D9DEE2;
+        border-color: #D9DEE2;
+        color: var(--color-grey-dark);
+        display: inline-flex;
+        align-items: center;
+        border-radius: 6px;
+        gap: 16px;
+    }
+
+    .choices[data-type*=select-multiple] .choices__button, .choices[data-type*=text] .choices__button {
+        border-left: 0;
+        width: 24px;
+        height: 24px;
+        background: url('../images/cross-black.svg') center center / 18px no-repeat;
+        padding: 0;
+        flex-shrink: 0;
+        margin: 0;
+    }
+  }
+
+  &__item {
+    padding: 16px 0;
+
+    @media (max-width: 992px) {
+      padding: 24px 0;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 40px;
+
+      @media (max-width: 992px) {
+        margin-bottom: 0;
+      }
+    }
+
+    &-city {
+      font-size: 36px;
+      font-weight: 500;
+      margin-bottom: 40px;
+
+      @media (max-width: 992px) {
+        font-size: 26px;
+        margin-bottom: 24px;
+      }
+    }
+
+    &-places {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      padding: 0 40px;
+
+      @media (max-width: 992px) {
+        padding: 0;
+      }
+
+      @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &-place {
+      span {
+        display: block;
+        font-weight: 500;
+        font-size: 22px;
+        margin-bottom: 24px;
+
+        @media (max-width: 992px) {
+          font-size: 20px;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}

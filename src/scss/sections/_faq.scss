@@ -1,0 +1,138 @@
+.faq {
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+
+    @include media(md) {
+      gap: 24px;
+      flex-direction: column-reverse;
+      background-color: #f7f7ef;
+      padding: 16px 12px;
+      border-radius: 4px;
+    }
+  }
+
+  &__list {
+    max-width: 650px;
+    width: 100%;
+
+    @include media(md) {
+      max-width: 100%;
+    }
+  }
+
+  &__info {
+    max-width: 538px;
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    @include media(md) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__desc {
+    margin-bottom: 40px;
+
+    @include media(md) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__form {
+    .form-group {
+      + .form-group {
+        margin-top: 20px;
+      }
+    }
+
+    .form-checkbox {
+      margin-top: 16px;
+    }
+
+    .form-btn {
+      margin-top: 40px;
+      width: 315px;
+
+      @include media(md) {
+        margin-top: 16px;
+      }
+    }
+  }
+
+  &__item {
+    border-top: 1px solid var(--color-primary-light);
+
+    @include media(md) {
+      font-size: 14px;
+    }
+
+    &.is-open {
+      .faq__item-toggler {
+        transform: rotate(45deg);
+        background-color: #EEEEDE;
+      }
+
+      .faq__item-body {
+        display: block;
+      }
+    }
+
+    &-head {
+      padding: 8px 8px 8px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      font-weight: 500;
+      cursor: pointer;
+
+      @include media(md) {
+        padding: 10px 0;
+        align-items: flex-start;
+      }
+    }
+
+    &-body {
+      padding: 8px 20px 24px;
+      color: var(--color-grey-dark);
+      display: none;
+
+      @include media(md) {
+        padding: 4px 0 12px;
+      }
+    }
+
+    &-toggler {
+      --size: 48px;
+      width: var(--size);
+      height: var(--size);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: var(--transition);
+      background-image: url("../images/plus.svg");
+      background-position: center center;
+      background-size: 24px;
+      background-repeat: no-repeat;
+      flex-shrink: 0;
+
+      @include media(md) {
+        --size: 36px;
+      }
+
+      svg {
+        display: block;
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

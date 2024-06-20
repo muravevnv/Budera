@@ -1,0 +1,30 @@
+.similar {
+  overflow: hidden;
+
+  &__title {
+    margin-bottom: 40px;
+
+    @include media(md) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &__slider {
+    overflow: hidden;
+
+    @include media(sm) {
+      overflow: visible;
+    }
+  }
+
+  .products-item {
+
+    @include media(sm) {
+      width: 246px;
+    }
+  }
+}

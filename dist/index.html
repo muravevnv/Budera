@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Главная</title>
+  </head>
+  <body class="body">
+    <header class="header"> 
+      <div class="header__container"><a class="header__logo" href="/"><img src="./images/logo.svg" alt=""></a>
+        <div class="header__menu">
+          <nav class="header__nav"> 
+            <ul class="header__nav-list"> 
+              <li> <a href="#">Портфолио</a></li>
+              <li> <a href="#">О компании</a></li>
+              <li> <a href="#">Сотрудничество</a></li>
+              <li> <a href="#">Где купить</a></li>
+              <li> <a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header__contacts"> 
+            <div class="header__contacts-info"> <a class="header__tel" href="tel:+74952681218">+7 (495) 268-12-18</a><a class="header__mail" href="mailto:info@budera.ru">info@budera.ru</a></div>
+            <div class="header__socials socials"> <a class="socials__item" href="#"> 
+                    <svg width="24" height="24">
+                      <use xlink:href="images/sprite.svg#vk"></use>
+                    </svg></a><a class="socials__item" href="#">
+                    <svg width="24" height="24">
+                      <use xlink:href="images/sprite.svg#ok"></use>
+                    </svg></a><a class="socials__item" href="#">
+                    <svg width="24" height="24">
+                      <use xlink:href="images/sprite.svg#youtube"></use>
+                    </svg></a><a class="socials__item" href="#">
+                    <svg width="24" height="24">
+                      <use xlink:href="images/sprite.svg#dzen"></use>
+                    </svg></a></div>
+          </div>
+          <div class="header__address">
+             Московская обл. <br>
+            Мытищи, Фуражный проезд, д.4
+          </div>
+        </div>
+      </div>
+    </header>
+    <main style="padding: 150px 0">
+      <div class="container"> 
+        <ul> 
+          <li> <a href="main.html">Главная</a></li>
+          <li> <a href="product.html">Карточка товара</a></li>
+          <li> <a href="portfolio.html">Портфолио</a></li>
+          <li> <a href="about.html">О компании</a></li>
+          <li> <a href="connect.html">Сотрудничество</a></li>
+          <li> <a href="offices.html">Где купить ?</a></li>
+          <li> <a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </main>
+    <footer class="footer"> 
+      <div class="container"> 
+        <div class="footer__left">
+          <nav class="footer__nav"> 
+            <ul class="footer__nav-list"> 
+              <li> <a href="">Каталог</a></li>
+              <li> <a href="">Портфолио</a></li>
+              <li> <a href="">О компании</a></li>
+              <li> <a href="">Сотрудничество</a></li>
+              <li> <a href="">Где купить</a></li>
+              <li> <a href="">Контакты</a></li>
+            </ul>
+          </nav><a class="footer__logo" href="/"><img src="./images/logo.svg" alt="Budera"></a>
+        </div>
+        <div class="footer__main"> 
+          <div class="footer__address">Московская обл. <br> Мытищи, Фуражный проезд, д.4</div>
+          <div class="footer__socials socials"> <a class="socials__item" href="#"> 
+                  <svg width="24" height="24">
+                    <use xlink:href="images/sprite.svg#vk"></use>
+                  </svg></a><a class="socials__item" href="#">
+                  <svg width="24" height="24">
+                    <use xlink:href="images/sprite.svg#ok"></use>
+                  </svg></a><a class="socials__item" href="#">
+                  <svg width="24" height="24">
+                    <use xlink:href="images/sprite.svg#youtube"></use>
+                  </svg></a><a class="socials__item" href="#">
+                  <svg width="24" height="24">
+                    <use xlink:href="images/sprite.svg#dzen"></use>
+                  </svg></a></div>
+          <div class="footer__contacts"> <a class="footer__tel" href="tel:">+7 (495) 268-12-18</a><a class="footer__email" href="mailto:">info@budera.ru</a></div>
+        </div>
+        <div class="footer__right"> 
+          <div class="footer__policy">Использование данного сайта подразумевает согласие с <a href="#">Политикой конфиденциальности </a></div>
+          <div class="footer__company">© Budera 2024</div>
+        </div>
+      </div>
+    </footer>
+    <div class="popup js-popup" data-popup="callback"> 
+      <div class="popup__overlay"> </div>
+      <div class="popup__wrapper"> 
+        <div class="popup__content"> 
+          <button class="popup__close js-popup-close" type="button">
+                <svg width="24" height="24">
+                  <use xlink:href="images/sprite.svg#cross"></use>
+                </svg>
+          </button>
+          <div class="popup__head">
+            <div class="popup__title h3">Оставить заявку</div>
+          </div>
+          <form class="popup__form" action="#">
+            <div class="form-group">
+              <label class="form-label" for="#"> </label>
+              <input class="form-control" type="text" placeholder="Ваше имя *"><span class="form-error-icon">  </span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="#"> </label>
+              <input class="form-control" type="text" placeholder="Ваш Email *"><span class="form-error-icon">  </span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="#"> </label>
+              <input class="form-control" type="text" placeholder="Ваш Телефон *"><span class="form-error-icon">  </span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="#"> </label>
+              <textarea class="form-control" name="" type="text" placeholder="Задать свой вопрос *"></textarea><span class="form-error-icon">  </span>
+            </div>
+            <div class="form-checkbox"> 
+              <input type="checkbox" name="" id="popup_callback_condition" checked>
+              <label for="popup_callback_condition">Согласен с условиями обработки персональных данных</label>
+            </div>
+            <button class="form-btn btn btn--wide" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="popup js-popup" data-popup="sucsess"> 
+      <div class="popup__overlay"> </div>
+      <div class="popup__wrapper"> 
+        <div class="popup__content"> 
+          <button class="popup__close js-popup-close" type="button"> 
+                <svg width="24" height="24">
+                  <use xlink:href="images/sprite.svg#cross"></use>
+                </svg>
+          </button>
+          <div class="popup__head">
+            <div class="popup__title h3">Оставить заявку</div>
+            <div class="popup__desc">Ваш заявка успешно отправлена</div>
+          </div>
+          <div class="popup__btn btn btn--light btn--wide">Продолжить</div>
+        </div>
+      </div>
+    </div>
+    <div class="popup js-popup" data-popup="order"> 
+      <div class="popup__overlay"> </div>
+      <div class="popup__wrapper"> 
+        <div class="popup__content"> 
+          <button class="popup__close js-popup-close" type="button"> 
+                <svg width="24" height="24">
+                  <use xlink:href="images/sprite.svg#cross"></use>
+                </svg>
+          </button>
+          <div class="popup__head">
+            <div class="popup__title h3">Оставить заявку</div>
+          </div>
+          <div class="popup__removed"> 
+            <div class="popup__removed-timer"> 
+              <div class="popup__removed-timer-circle"></div>
+              <div class="popup__removed-timer-num">1</div>
+            </div>
+            <div class="popup__removed-info"> <span>Вы удалили:</span>Купель Exelent 250</div>
+            <button class="popup__removed-back reset-btn">Вернуть</button>
+          </div>
+          <div class="popup__order"> 
+            <div class="popup__order-main"> 
+              <div class="popup__order-img"> <img src="./images/order/order.png" alt=""></div>
+              <div class="popup__order-info"> 
+                <div class="popup__order-title">Купель Exelent 250</div>
+                <div class="popup__order-desc">Эта купель – лучшее, что может украсить ваш загородный участок. Инновации, стиль, идеальный объем!</div>
+              </div>
+              <button class="popup__order-remove"> 
+                    <svg width="24" height="24">
+                      <use xlink:href="images/sprite.svg#cross"></use>
+                    </svg>
+              </button>
+            </div>
+            <div class="popup__order-tags"> 
+              <div class="popup__order-tag">+ Термокрышка</div>
+              <div class="popup__order-tag">+ Гидромассаж</div>
+              <div class="popup__order-tag">+ Светодиодная подсветка</div>
+              <div class="popup__order-tag">+ Печь</div>
+              <div class="popup__order-tag">+ Обшивка деревом</div>
+            </div>
+            <div class="popup__order-price">Сумма: 260 000 ₽</div>
+          </div>
+          <form class="popup__form" action="#">
+            <div class="form-group">
+              <label class="form-label" for="#"> </label>
+              <input class="form-control" type="text" placeholder="Ваше имя *"><span class="form-error-icon">  </span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="#"> </label>
+              <input class="form-control" type="text" placeholder="Ваш Email *"><span class="form-error-icon">  </span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="#"> </label>
+              <input class="form-control" type="text" placeholder="Ваш Телефон *"><span class="form-error-icon">  </span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="#"> </label>
+              <textarea class="form-control" name="" type="text" placeholder="Задать свой вопрос *"></textarea><span class="form-error-icon">  </span>
+            </div>
+            <div class="form-checkbox"> 
+              <input type="checkbox" name="" id="popup_callback_condition" checked>
+              <label for="popup_callback_condition">Согласен с условиями обработки персональных данных</label>
+            </div>
+            <button class="form-btn btn btn--wide" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/libs/swiper-bundle.min.js"></script>
+    <script src="scripts/libs/choices.min.js"></script><script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU" type="text/javascript"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

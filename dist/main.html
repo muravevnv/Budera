@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Главная</title>
+  </head>
+  <body class="body">
+    <header class="header"> 
+      <div class="header__container"><a class="header__logo" href="/"><img src="./images/logo.svg" alt=""></a>
+        <div class="header__menu">
+          <nav class="header__nav"> 
+            <ul class="header__nav-list"> 
+              <li> <a href="#">Портфолио</a></li>
+              <li> <a href="#">О компании</a></li>
+              <li> <a href="#">Сотрудничество</a></li>
+              <li> <a href="#">Где купить</a></li>
+              <li> <a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header__contacts"> 
+            <div class="header__contacts-info"> <a class="header__tel" href="tel:+74952681218">+7 (495) 268-12-18</a><a class="header__mail" href="mailto:info@budera.ru">info@budera.ru</a></div>
+            <div class="header__socials socials"> <a class="socials__item" href="#"> 
+                    <svg width="24" height="24">
+                      <use xlink:href="images/sprite.svg#vk"></use>
+                    </svg></a><a class="socials__item" href="#">
+                    <svg width="24" height="24">
+                      <use xlink:href="images/sprite.svg#ok"></use>
+                    </svg></a><a class="socials__item" href="#">
+                    <svg width="24" height="24">
+                      <use xlink:href="images/sprite.svg#youtube"></use>
+                    </svg></a><a class="socials__item" href="#">
+                    <svg width="24" height="24">
+                      <use xlink:href="images/sprite.svg#dzen"></use>
+                    </svg></a></div>
+          </div>
+          <div class="header__address">
+             Московская обл. <br>
+            Мытищи, Фуражный проезд, д.4
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero"> 
+        <div class="container"> 
+          <div class="hero__info"> 
+            <h1 class="hero__title h1">Уличная купель с подогревом на дровах!</h1>
+            <picture class="hero__picture">
+              <source srcset="./images/hero/hero-sm.webp" type="images/webp">
+              <source srcset="./images/hero/hero-sm.jpg" type="images/jpg"><img src="./images/hero/hero-sm.jpg" alt="Уличная купель">
+            </picture>
+            <div class="hero__desc">
+               Компания «Budera» – производитель композитных купелей. 
+              Купели Budera можно увидеть на территории современных баз отдыха, 
+              на террасах загородных домов и усадеб. <br>
+              Лучшие материалы и комплектующие, современное оборудование, компьютерное 
+              проектирование, великолепное качество поверхностей, оригинальные цветовые 
+              решения от классики до современности. <br>
+              Наслаждайтесь природой вместе с купелями Budera!
+            </div>
+            <div class="hero__controls"> 
+              <button class="hero__btn-callback btn js-popup-btn" type="button" data-popup="callback">Оставить заявку</button><a class="hero__btn-about btn btn--light" href="#">О нас подробнее</a>
+            </div>
+          </div>
+          <picture class="hero__img"> 
+            <source srcset="./images/hero/hero.webp" type="images/webp">
+            <source srcset="./images/hero/hero.jpg" type="images/jpg"><img src="./images/hero/hero.jpg" alt="Уличная купель">
+          </picture>
+        </div>
+      </section>
+      <section class="products section"> 
+        <div class="container">
+          <div class="products__title h2">Купить купель</div>
+          <div class="products__inner"> 
+            <div class="products__slider js-products-slider"> 
+              <div class="swiper-wrapper"> 
+                <div class="products-item swiper-slide"><a class="products-item__title" href="#">Купель Exelent 250</a>
+                  <div class="products-item__desc">Эта купель – лучшее, что может украсить ваш загородный участок. Инновации, стиль, идеальный объем!</div><a class="products-item__img" href="#"> <img src="./images/products/product-01.jpg" alt="Купель Exelent 250"></a>
+                  <div class="products-item__details"> 
+                    <div class="products-item__detail">Термокрышка</div>
+                    <div class="products-item__detail">Светодиодная подсветка</div>
+                    <div class="products-item__detail">Печь</div>
+                  </div>
+                  <div class="products-item__price">260 000 ₽<span>300 000 ₽</span></div>
+                  <button class="products-item__btn btn btn--wide" type="button">Купить в один клик</button>
+                </div>
+                <div class="products-item swiper-slide"><a class="products-item__title" href="#">Купель Perfect 300</a>
+                  <div class="products-item__desc">Универсальное решение в стиле европейской классики. Для дома, для дачи, для базы отдыха.</div><a class="products-item__img" href="#"> <img src="./images/products/product-02.jpg" alt="Купель Perfect 300"></a>
+                  <div class="products-item__details"> 
+                    <div class="products-item__detail">Термокрышка</div>
+                    <div class="products-item__detail">Гидромассаж</div>
+                    <div class="products-item__detail">Светодиодная подсветка</div>
+                    <div class="products-item__detail">Печь</div>
+                    <div class="products-item__detail">Обшивка деревом</div>
+                  </div>
+                  <div class="products-item__price">260 000 ₽<span>300 000 ₽</span></div>
+                  <button class="products-item__btn btn btn--wide" type="button">Купить в один клик</button>
+                </div>
+                <div class="products-item swiper-slide"><a class="products-item__title" href="#">Купель Exclusive 200</a>
+                  <div class="products-item__desc">Украшение вашей бани. Идеально войдёт в стандартный дверной проём. Не требует сложного монтажа.</div><a class="products-item__img" href="#"> <img src="./images/products/product-03.jpg" alt="Купель Exclusive 200"></a>
+                  <div class="products-item__details"> 
+                    <div class="products-item__detail">Термокрышка</div>
+                    <div class="products-item__detail">Гидромассаж</div>
+                    <div class="products-item__detail">Светодиодная подсветка</div>
+                    <div class="products-item__detail">Печь</div>
+                  </div>
+                  <div class="products-item__price">260 000 ₽<span>300 000 ₽</span></div>
+                  <button class="products-item__btn btn btn--wide" type="button">Купить в один клик</button>
+                </div>
+                <div class="products-item swiper-slide"><a class="products-item__title" href="#">Купель MegaStar</a>
+                  <div class="products-item__desc">Эта купель – лучшее, что может украсить ваш загородный участок. Инновации, стиль, идеальный объем!</div><a class="products-item__img" href="#"> <img src="./images/products/product-04.jpg" alt="Купель MegaStar"></a>
+                  <div class="products-item__details"> 
+                    <div class="products-item__detail">Термокрышка</div>
+                    <div class="products-item__detail">Гидромассаж</div>
+                    <div class="products-item__detail">Светодиодная подсветка</div>
+                    <div class="products-item__detail">Печь</div>
+                    <div class="products-item__detail">Обшивка деревом</div>
+                  </div>
+                  <div class="products-item__price">260 000 ₽<span>300 000 ₽</span></div>
+                  <button class="products-item__btn btn btn--wide" type="button">Купить в один клик</button>
+                </div>
+                <div class="products-item swiper-slide"><a class="products-item__title" href="#">Купель Exelent 250</a>
+                  <div class="products-item__desc">Эта купель – лучшее, что может украсить ваш загородный участок. Инновации, стиль, идеальный объем!</div><a class="products-item__img" href="#"> <img src="./images/products/product-01.jpg" alt="Купель Exelent 250"></a>
+                  <div class="products-item__details"> 
+                    <div class="products-item__detail">Термокрышка</div>
+                    <div class="products-item__detail">Светодиодная подсветка</div>
+                    <div class="products-item__detail">Печь</div>
+                  </div>
+                  <div class="products-item__price">260 000 ₽<span>300 000 ₽</span></div>
+                  <button class="products-item__btn btn btn--wide" type="button">Купить в один клик</button>
+                </div>
+              </div>
+            </div>
+            <button class="js-products-slider-prev common-slider-btn common-slider-btn-prev" type="button">
+                  <svg width="24" height="24">
+                    <use xlink:href="images/sprite.svg#arrow-left"></use>
+                  </svg>
+            </button>
+            <button class="js-products-slider-next common-slider-btn common-slider-btn-next" type="button">
+                  <svg width="24" height="24">
+                    <use xlink:href="images/sprite.svg#arrow-right"></use>
+                  </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="video section">
+        <div class="container"> 
+          <div class="video__slider js-video-slider">
+            <div class="swiper-wrapper"><a class="video-item video-item--main swiper-slide" href="#">
+                <div class="video-item__preview"> <img src="./images/video/video-01.jpg" alt=""></div>
+                <div class="video-item__btn btn-play"></div></a><a class="video-item swiper-slide" href="#"> 
+                <div class="video-item__preview"> <img src="./images/video/video-02.jpg" alt=""></div>
+                <div class="video-item__btn btn-play"></div></a><a class="video-item swiper-slide" href="#"> 
+                <div class="video-item__preview"> <img src="./images/video/video-03.jpg" alt=""></div>
+                <div class="video-item__btn btn-play"></div></a></div>
+          </div>
+        </div>
+      </section>
+      <section class="callback">
+        <div class="container callback__container"> 
+          <div class="callback__info"> 
+            <div class="callback__title h3">Нужна консультация?</div>
+            <div class="callback__desc">Укажите Ваш номер телефона и мы перезвоним вам!</div>
+          </div>
+          <form class="callback__form" action="#">
+            <div class="callback__form-row"> 
+              <div class="form-group form-group--icon">
+                <input class="form-control" type="text" placeholder="+7 (___) ___ __ __"><span class="form-error-icon"> </span>
+              </div>
+              <button class="form-btn btn btn--light">Заказать обратный звонок</button>
+            </div>
+            <div class="form-checkbox"> 
+              <input type="checkbox" name="" id="consultation_condition" checked>
+              <label for="consultation_condition">Согласен с условиями обработки персональных данных</label>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="section portfolio-main"> 
+        <div class="container"> 
+          <div class="portfolio-main__wrapper">
+            <picture class="portfoli-main__img"> <img src="./images/portfolio/portfolio.png" alt=""></picture>
+            <div class="portfolio-main__info"> 
+              <h2 class="portfolio-main__title h2">Портфолио</h2><a class="portfolio-main__btn btn btn--light" href="#">Смотреть все проекты</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section advantages"> 
+        <div class="container advantages__container">
+          <div class="advantages__title h2">Преимущества <br> BUDERA</div>
+          <picture class="advantages__img"> <img src="./images/advantages/img.png" alt=""></picture>
+          <div class="advantages__list"> 
+            <div class="advantages__item advantages__item--left">
+              <div class="advantages__item-text">Большой выбор цветов, разнообразие форм: круглые, овальные, угловые, квадратные.</div>
+              <div class="advantages__item-icon"> <img src="./images/advantages/adv-01.svg" alt=""></div>
+            </div>
+            <div class="advantages__item advantages__item--left">
+              <div class="advantages__item-text">Автономный нагрев <br> Наружная печка на дровах позволяет нагревать воду до 40 градусов даже зимой.</div>
+              <div class="advantages__item-icon"> <img src="./images/advantages/adv-02.svg" alt=""></div>
+            </div>
+            <div class="advantages__item advantages__item--right">
+              <div class="advantages__item-text">100% герметичностьи долговечность <br> Герметичная пластиковая чаша из УФ-стойкого полипропиленатолщиной 8мм.</div>
+              <div class="advantages__item-icon"> <img src="./images/advantages/adv-03.svg" alt=""></div>
+            </div>
+            <div class="advantages__item advantages__item--right">
+              <div class="advantages__item-text">Изготовленные из композита купели отличаются высокими эксплуатационными характеристиками: теплостойкость, эстетичность, морозостойкость.</div>
+              <div class="advantages__item-icon"> <img src="./images/advantages/adv-04.svg" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="faq section">
+        <div class="container faq__container"> 
+          <div class="faq__wrapper">
+            <div class="faq__info">
+              <div class="faq__title h3"> Вопросы и ответы</div>
+              <div class="faq__desc"> Познакомьтесь с наиболее часто задаваемыми вопросами. Вы можете задать свой вопрос, воспользуйтесь формой.</div>
+              <form class="faq__form" action="#">
+                <div class="form-group">
+                  <label class="form-label" for="#"> </label>
+                  <input class="form-control" type="text" placeholder="Ваше имя *"><span class="form-error-icon">  </span>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="#"> </label>
+                  <input class="form-control" type="text" placeholder="Ваше имя *"><span class="form-error-icon">  </span>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="#"> </label>
+                  <textarea class="form-control" name="" type="text" placeholder="Задать свой вопрос *"></textarea><span class="form-error-icon">  </span>
+                </div>
+                <div class="form-checkbox"> 
+                  <input type="checkbox" name="" id="faq_condition" checked>
+                  <label for="faq_condition">Согласен с условиями обработки персональных данных</label>
+                </div>
+                <button class="form-btn btn" type="submit">Отправить вопрос </button>
+              </form>
+            </div>
+            <div class="faq__list">
+              <div class="faq__item js-accordeon">
+                <div class="faq__item-head js-accordeon-head"> 
+                  <div class="faq__item-title">Как производится оплата и какие гарантии?</div>
+                  <div class="faq__item-toggler"> </div>
+                </div>
+                <div class="faq__item-body js-accordeon-body">
+                   Наше производство находится 
+                  в Московской области, в городе
+                  Мытищи, Фуражный проезд, д.4. Производство не является закрытым, 
+                  вы в любой момент можете подъехать для оценки качества наших 
+                  изделий и самой древесины. Но в любом случае желательно согласовать 
+                  дату вашего приезда с менеджером, что-бы вас встретили и проводили 
+                  в цех. Приезжайте, будем рады видеть вас!
+                </div>
+              </div>
+              <div class="faq__item js-accordeon is-open">
+                <div class="faq__item-head js-accordeon-head"> 
+                  <div class="faq__item-title">Где находится ваше производство и могу ли я туда приехать посмотреть на изделия?</div>
+                  <div class="faq__item-toggler"> </div>
+                </div>
+                <div class="faq__item-body js-accordeon-body">
+                   Наше производство находится 
+                  в Московской области, в городе
+                  Мытищи, Фуражный проезд, д.4. Производство не является закрытым, 
+                  вы в любой момент можете подъехать для оценки качества наших 
+                  изделий и самой древесины. Но в любом случае желательно согласовать 
+                  дату вашего приезда с менеджером, что-бы вас встретили и проводили 
+                  в цех. Приезжайте, будем рады видеть вас!
+                </div>
+              </div>
+              <div class="faq__item js-accordeon">
+                <div class="faq__item-head js-accordeon-head"> 
+                  <div class="faq__item-title">У вас дороже, чем у конкурентов. Почему? Могу я получить скидку?</div>
+                  <div class="faq__item-toggler"> </div>
+                </div>
+                <div class="faq__item-body js-accordeon-body">
+                   Наше производство находится 
+                  в Московской области, в городе
+                  Мытищи, Фуражный проезд, д.4. Производство не является закрытым, 
+                  вы в любой момент можете подъехать для оценки качества наших 
+                  изделий и самой древесины. Но в любом случае желательно согласовать 
+                  дату вашего приезда с менеджером, что-бы вас встретили и проводили 
+                  в цех. Приезжайте, будем рады видеть вас!
+                </div>
+              </div>
+              <div class="faq__item js-accordeon">
+                <div class="faq__item-head js-accordeon-head"> 
+                  <div class="faq__item-title">Могу ли я оплатить изделие по факту его получения?</div>
+                  <div class="faq__item-toggler"> </div>
+                </div>
+                <div class="faq__item-body js-accordeon-body">
+                   Наше производство находится 
+                  в Московской области, в городе
+                  Мытищи, Фуражный проезд, д.4. Производство не является закрытым, 
+                  вы в любой момент можете подъехать для оценки качества наших 
+                  изделий и самой древесины. Но в любом случае желательно согласовать 
+                  дату вашего приезда с менеджером, что-бы вас встретили и проводили 
+                  в цех. Приезжайте, будем рады видеть вас!
+                </div>
+              </div>
+              <div class="faq__item js-accordeon">
+                <div class="faq__item-head js-accordeon-head"> 
+                  <div class="faq__item-title">Есть ли возможность окраски изделия в уникальный цвет по образцу?</div>
+                  <div class="faq__item-toggler"> </div>
+                </div>
+                <div class="faq__item-body js-accordeon-body">
+                   Наше производство находится 
+                  в Московской области, в городе
+                  Мытищи, Фуражный проезд, д.4. Производство не является закрытым, 
+                  вы в любой момент можете подъехать для оценки качества наших 
+                  изделий и самой древесины. Но в любом случае желательно согласовать 
+                  дату вашего приезда с менеджером, что-бы вас встретили и проводили 
+                  в цех. Приезжайте, будем рады видеть вас!
+                </div>
+              </div>
+              <div class="faq__item js-accordeon">
+                <div class="faq__item-head js-accordeon-head"> 
+                  <div class="faq__item-title">Сколько времени занимает изготовление и доставка?</div>
+                  <div class="faq__item-toggler"> </div>
+                </div>
+                <div class="faq__item-body js-accordeon-body">
+                   Наше производство находится 
+                  в Московской области, в городе
+                  Мытищи, Фуражный проезд, д.4. Производство не является закрытым, 
+                  вы в любой момент можете подъехать для оценки качества наших 
+                  изделий и самой древесины. Но в любом случае желательно согласовать 
+                  дату вашего приезда с менеджером, что-бы вас встретили и проводили 
+                  в цех. Приезжайте, будем рады видеть вас!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="banner"> 
+        <div class="container"> 
+          <div class="banner__wrapper"> 
+            <div class="banner__title h2">Готовы <br> сделать <br> заказ ?</div>
+            <button class="banner__btn btn btn--light" type="button">Оставить заявку</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"> 
+      <div class="container"> 
+        <div class="footer__left">
+          <nav class="footer__nav"> 
+            <ul class="footer__nav-list"> 
+              <li> <a href="">Каталог</a></li>
+              <li> <a href="">Портфолио</a></li>
+              <li> <a href="">О компании</a></li>
+              <li> <a href="">Сотрудничество</a></li>
+              <li> <a href="">Где купить</a></li>
+              <li> <a href="">Контакты</a></li>
+            </ul>
+          </nav><a class="footer__logo" href="/"><img src="./images/logo.svg" alt="Budera"></a>
+        </div>
+        <div class="footer__main"> 
+          <div class="footer__address">Московская обл. <br> Мытищи, Фуражный проезд, д.4</div>
+          <div class="footer__socials socials"> <a class="socials__item" href="#"> 
+                  <svg width="24" height="24">
+                    <use xlink:href="images/sprite.svg#vk"></use>
+                  </svg></a><a class="socials__item" href="#">
+                  <svg width="24" height="24">
+                    <use xlink:href="images/sprite.svg#ok"></use>
+                  </svg></a><a class="socials__item" href="#">
+                  <svg width="24" height="24">
+                    <use xlink:href="images/sprite.svg#youtube"></use>
+                  </svg></a><a class="socials__item" href="#">
+                  <svg width="24" height="24">
+                    <use xlink:href="images/sprite.svg#dzen"></use>
+                  </svg></a></div>
+          <div class="footer__contacts"> <a class="footer__tel" href="tel:">+7 (495) 268-12-18</a><a class="footer__email" href="mailto:">info@budera.ru</a></div>
+        </div>
+        <div class="footer__right"> 
+          <div class="footer__policy">Использование данного сайта подразумевает согласие с <a href="#">Политикой конфиденциальности </a></div>
+          <div class="footer__company">© Budera 2024</div>
+        </div>
+      </div>
+    </footer>
+    <div class="popup js-popup" data-popup="callback"> 
+      <div class="popup__overlay"> </div>
+      <div class="popup__wrapper"> 
+        <div class="popup__content"> 
+          <button class="popup__close js-popup-close" type="button">
+                <svg width="24" height="24">
+                  <use xlink:href="images/sprite.svg#cross"></use>
+                </svg>
+          </button>
+          <div class="popup__head">
+            <div class="popup__title h3">Оставить заявку</div>
+          </div>
+          <form class="popup__form" action="#">
+            <div class="form-group">
+              <label class="form-label" for="#"> </label>
+              <input class="form-control" type="text" placeholder="Ваше имя *"><span class="form-error-icon">  </span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="#"> </label>
+              <input class="form-control" type="text" placeholder="Ваш Email *"><span class="form-error-icon">  </span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="#"> </label>
+              <input class="form-control" type="text" placeholder="Ваш Телефон *"><span class="form-error-icon">  </span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="#"> </label>
+              <textarea class="form-control" name="" type="text" placeholder="Задать свой вопрос *"></textarea><span class="form-error-icon">  </span>
+            </div>
+            <div class="form-checkbox"> 
+              <input type="checkbox" name="" id="popup_callback_condition" checked>
+              <label for="popup_callback_condition">Согласен с условиями обработки персональных данных</label>
+            </div>
+            <button class="form-btn btn btn--wide" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="popup js-popup" data-popup="sucsess"> 
+      <div class="popup__overlay"> </div>
+      <div class="popup__wrapper"> 
+        <div class="popup__content"> 
+          <button class="popup__close js-popup-close" type="button"> 
+                <svg width="24" height="24">
+                  <use xlink:href="images/sprite.svg#cross"></use>
+                </svg>
+          </button>
+          <div class="popup__head">
+            <div class="popup__title h3">Оставить заявку</div>
+            <div class="popup__desc">Ваш заявка успешно отправлена</div>
+          </div>
+          <div class="popup__btn btn btn--light btn--wide">Продолжить</div>
+        </div>
+      </div>
+    </div>
+    <div class="popup js-popup" data-popup="order"> 
+      <div class="popup__overlay"> </div>
+      <div class="popup__wrapper"> 
+        <div class="popup__content"> 
+          <button class="popup__close js-popup-close" type="button"> 
+                <svg width="24" height="24">
+                  <use xlink:href="images/sprite.svg#cross"></use>
+                </svg>
+          </button>
+          <div class="popup__head">
+            <div class="popup__title h3">Оставить заявку</div>
+          </div>
+          <div class="popup__removed"> 
+            <div class="popup__removed-timer"> 
+              <div class="popup__removed-timer-circle"></div>
+              <div class="popup__removed-timer-num">1</div>
+            </div>
+            <div class="popup__removed-info"> <span>Вы удалили:</span>Купель Exelent 250</div>
+            <button class="popup__removed-back reset-btn">Вернуть</button>
+          </div>
+          <div class="popup__order"> 
+            <div class="popup__order-main"> 
+              <div class="popup__order-img"> <img src="./images/order/order.png" alt=""></div>
+              <div class="popup__order-info"> 
+                <div class="popup__order-title">Купель Exelent 250</div>
+                <div class="popup__order-desc">Эта купель – лучшее, что может украсить ваш загородный участок. Инновации, стиль, идеальный объем!</div>
+              </div>
+              <button class="popup__order-remove"> 
+                    <svg width="24" height="24">
+                      <use xlink:href="images/sprite.svg#cross"></use>
+                    </svg>
+              </button>
+            </div>
+            <div class="popup__order-tags"> 
+              <div class="popup__order-tag">+ Термокрышка</div>
+              <div class="popup__order-tag">+ Гидромассаж</div>
+              <div class="popup__order-tag">+ Светодиодная подсветка</div>
+              <div class="popup__order-tag">+ Печь</div>
+              <div class="popup__order-tag">+ Обшивка деревом</div>
+            </div>
+            <div class="popup__order-price">Сумма: 260 000 ₽</div>
+          </div>
+          <form class="popup__form" action="#">
+            <div class="form-group">
+              <label class="form-label" for="#"> </label>
+              <input class="form-control" type="text" placeholder="Ваше имя *"><span class="form-error-icon">  </span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="#"> </label>
+              <input class="form-control" type="text" placeholder="Ваш Email *"><span class="form-error-icon">  </span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="#"> </label>
+              <input class="form-control" type="text" placeholder="Ваш Телефон *"><span class="form-error-icon">  </span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="#"> </label>
+              <textarea class="form-control" name="" type="text" placeholder="Задать свой вопрос *"></textarea><span class="form-error-icon">  </span>
+            </div>
+            <div class="form-checkbox"> 
+              <input type="checkbox" name="" id="popup_callback_condition" checked>
+              <label for="popup_callback_condition">Согласен с условиями обработки персональных данных</label>
+            </div>
+            <button class="form-btn btn btn--wide" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/libs/swiper-bundle.min.js"></script>
+    <script src="scripts/libs/choices.min.js"></script><script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU" type="text/javascript"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

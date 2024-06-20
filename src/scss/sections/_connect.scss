@@ -1,0 +1,67 @@
+.connect {
+  padding: 40px 0;
+
+  @include media(md) {
+    padding: 24px 0;
+  }
+
+  &__wrapper {
+    max-width: 1224px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 48px;
+
+    @include media(md) {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  &__item {
+    max-width: 538px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+
+    @include media(md) {
+      padding: 24px 0;
+      gap: 0;
+
+      &:first-of-type {
+        padding-top: 0;
+      }
+    }
+
+    &-title {
+      font-weight: 500;
+      font-size: 36px;
+
+      @include media(md) {
+        margin-bottom: 16px;
+        font-size: 26px;
+      }
+    }
+
+    &-desc {
+      width: 100%;
+
+      @include media(md) {
+        margin-bottom: 24px;
+      }
+
+      p + p {
+        margin-top: 16px;
+      }
+    }
+
+    &-btn {
+      @include media(xs) {
+        width: 100%;
+      }
+    }
+  }
+}

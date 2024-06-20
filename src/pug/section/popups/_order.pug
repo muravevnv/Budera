@@ -1,0 +1,53 @@
+.popup.js-popup(data-popup="order")  
+  .popup__overlay 
+  .popup__wrapper 
+    .popup__content 
+      button(type="button").popup__close.js-popup-close 
+        +svg(24, 24, 'cross')
+      .popup__head
+        .popup__title.h3 Оставить заявку
+      .popup__removed 
+        .popup__removed-timer 
+          .popup__removed-timer-circle
+          .popup__removed-timer-num 1
+        .popup__removed-info 
+          span Вы удалили:
+          | Купель Exelent 250
+        button.popup__removed-back.reset-btn Вернуть
+      .popup__order 
+        .popup__order-main 
+          .popup__order-img 
+            img(src="./images/order/order.png", alt="")
+          .popup__order-info 
+            .popup__order-title Купель Exelent 250
+            .popup__order-desc Эта купель – лучшее, что может украсить ваш загородный участок. Инновации, стиль, идеальный объем!
+          button.popup__order-remove 
+            +svg(24, 24, 'cross')
+        .popup__order-tags 
+          .popup__order-tag + Термокрышка
+          .popup__order-tag + Гидромассаж
+          .popup__order-tag + Светодиодная подсветка
+          .popup__order-tag + Печь
+          .popup__order-tag + Обшивка деревом
+        .popup__order-price Сумма: 260 000 ₽
+      form.popup__form(action="#")
+        .form-group
+          label.form-label(for="#") 
+          input.form-control(type="text" placeholder="Ваше имя *")
+          span.form-error-icon   
+        .form-group
+          label.form-label(for="#") 
+          input.form-control(type="text" placeholder="Ваш Email *")
+          span.form-error-icon   
+        .form-group
+          label.form-label(for="#") 
+          input.form-control(type="text" placeholder="Ваш Телефон *")
+          span.form-error-icon   
+        .form-group
+          label.form-label(for="#") 
+          textarea.form-control(name="" type="text" placeholder="Задать свой вопрос *")
+          span.form-error-icon   
+        .form-checkbox 
+          input(type="checkbox", name="" id="popup_callback_condition" checked)
+          label(for="popup_callback_condition") Согласен с условиями обработки персональных данных
+        button(type="submit" class="form-btn btn btn--wide") Отправить

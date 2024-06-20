@@ -1,0 +1,77 @@
+.hero {
+  padding: 40px 0;
+
+  @include media(md) {
+    padding: 24px 0;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+  }
+
+  &__img {
+    max-width: 650px;
+    width: 100%;
+
+    @include media(sm) {
+      display: none;
+    }
+
+    img {
+      display: block;
+      border-radius: 8px;
+    }
+  }
+
+  &__picture {
+    display: none;
+
+    @include media(sm) {
+      display: block;
+      width: 100%;
+
+      img {
+        width: 100%;
+        display: block;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  &__info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include media(md) {
+      gap: 24px;
+    }
+  }
+
+  &__desc {
+
+    @include media(sm) {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    @include media(md) {
+      gap: 8px;
+    }
+
+    @include media(xs) {
+      > * {
+        flex-grow: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+section.hero 
+  .container 
+    .hero__info 
+      h1.hero__title.h1 Уличная купель с подогревом на дровах!
+      picture.hero__picture
+        source(srcset="./images/hero/hero-sm.webp" type="images/webp")
+        source(srcset="./images/hero/hero-sm.jpg" type="images/jpg")
+        img(src="./images/hero/hero-sm.jpg", alt="Уличная купель")
+      .hero__desc 
+        | Компания «Budera» – производитель композитных купелей. 
+        | Купели Budera можно увидеть на территории современных баз отдыха, 
+        | на террасах загородных домов и усадеб. <br>
+        | Лучшие материалы и комплектующие, современное оборудование, компьютерное 
+        | проектирование, великолепное качество поверхностей, оригинальные цветовые 
+        | решения от классики до современности. <br>
+        | Наслаждайтесь природой вместе с купелями Budera!
+      .hero__controls 
+        button(type="button" data-popup="callback").hero__btn-callback.btn.js-popup-btn Оставить заявку
+        a(href="#").hero__btn-about.btn.btn--light О нас подробнее
+    picture.hero__img 
+      source(srcset="./images/hero/hero.webp" type="images/webp")
+      source(srcset="./images/hero/hero.jpg" type="images/jpg")
+      img(src="./images/hero/hero.jpg", alt="Уличная купель")

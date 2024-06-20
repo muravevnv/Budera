@@ -1,0 +1,154 @@
+.products {
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &__slider {
+    overflow: hidden;
+
+    .swiper-wrapper {
+      align-items: stretch;
+
+      @include media(sm)  {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px 8px;
+      }
+    }
+  }
+}
+
+.products-item {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+
+  @include media(sm)   {
+    display: none;
+
+    &:nth-of-type(1), 
+    &:nth-of-type(2), 
+    &:nth-of-type(3), 
+    &:nth-of-type(4) {
+      display: flex;
+    }
+  }
+  
+  &__title {
+    font-size: 22px;
+    margin-bottom: 8px;
+    font-weight: 500;
+
+    @include media(md) {
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+
+    @include media(sm) {
+      min-height: 56px;
+    }
+  }
+
+  &__desc {
+    font-size: 13px;
+    color: var(--color-grey-dark);
+    margin-bottom: 24px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @include media(md)  {
+      font-size: 12px;
+      line-height: 1.33;
+      margin-bottom: 8px;
+      -webkit-line-clamp: 5;
+      min-height: 80px;
+    }
+  }
+
+  &__img {
+    margin-bottom: 24px;
+    width: 100%;
+
+    @include media(md)  {
+      margin-bottom: 8px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 4px;
+    }
+  }
+
+  &__details {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 24px;
+
+    @include media(md)  {
+      margin-bottom: 16px;
+    }
+
+    @include media(sm)   {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__detail {
+    padding: 5px;
+    font-size: 13px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 4px;
+    border: 1px solid var(--color-primary-light);
+
+    @include media(md)  {
+      padding: 3px;
+      font-size: 10px;
+    }
+
+    &::before {
+      display: inline;
+      content: '+';
+    }
+  }
+
+  &__price {
+    margin: auto 0 24px 0;
+    font-size: 22px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    @include media(md)  {
+      font-size: 20px;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      margin-bottom: 16px;
+      gap: 0;
+    }
+
+    span {
+      font-size: 16px;
+      color: var(--color-grey-dark);
+      text-decoration: line-through;
+
+      @include media(md)  {
+        font-size: 14px;
+      }
+    }
+  }
+}

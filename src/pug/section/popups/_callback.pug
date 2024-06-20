@@ -1,0 +1,29 @@
+.popup.js-popup(data-popup="callback") 
+  .popup__overlay 
+  .popup__wrapper 
+    .popup__content 
+      button(type="button").popup__close.js-popup-close
+        +svg(24, 24, 'cross')
+      .popup__head
+        .popup__title.h3 Оставить заявку
+      form.popup__form(action="#")
+        .form-group
+          label.form-label(for="#") 
+          input.form-control(type="text" placeholder="Ваше имя *")
+          span.form-error-icon   
+        .form-group
+          label.form-label(for="#") 
+          input.form-control(type="text" placeholder="Ваш Email *")
+          span.form-error-icon   
+        .form-group
+          label.form-label(for="#") 
+          input.form-control(type="text" placeholder="Ваш Телефон *")
+          span.form-error-icon   
+        .form-group
+          label.form-label(for="#") 
+          textarea.form-control(name="" type="text" placeholder="Задать свой вопрос *")
+          span.form-error-icon   
+        .form-checkbox 
+          input(type="checkbox", name="" id="popup_callback_condition" checked)
+          label(for="popup_callback_condition") Согласен с условиями обработки персональных данных
+        button(type="submit" class="form-btn btn btn--wide") Отправить

@@ -1,0 +1,36 @@
+.banner {
+
+  @include media(md) {
+    padding: 12px 0;
+  } 
+  
+  &__wrapper {
+    padding: 90px 40px;
+    overflow: hidden;
+    border-radius: 8px;
+    background: url('../images/banner/banner.jpg') center center / cover no-repeat;
+
+    @include media(sm) {
+      padding: 24px 20px 12px;
+      height: 494px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 4px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    color: var(--color-whte);
+  }
+
+  &__btn {
+    width: 315px;
+
+    @include media(xs) {
+      width: 100%;
+    }
+  }
+}
