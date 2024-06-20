@@ -5,7 +5,7 @@ header.header
   .header__container
     a.header__logo(href="/")
       img(src="./images/logo.svg", alt="")
-    .header__menu
+    .header__menu.js-header-menu
       nav.header__nav 
         ul.header__nav-list 
           for link in navLinks
@@ -27,3 +27,8 @@ header.header
       .header__address 
         | Московская обл. <br>
         | Мытищи, Фуражный проезд, д.4
+    .header__mobile-contacts 
+      a.header__mobile-tel(href="tel:+74952681218") +7 (495) 268-12-18 
+      a.header__mobile-mail(href="mailto:info@budera.ru") info@budera.ru 
+    button.header__burger.js-header-menu-toggler.reset-btn 
+      span 

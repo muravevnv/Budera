@@ -1,10 +1,10 @@
-// const menu = document.querySelector('.js-header-menu');
-// const menuToggler = document.querySelector('.js-header-menu-toggler');
+const menu = document.querySelector('.js-header-menu');
+const menuToggler = document.querySelector('.js-header-menu-toggler');
 
-// menuToggler.addEventListener('click', () => {
-//   menu.classList.toggle('is-open');
-//   menuToggler.classList.toggle('is-active');
-// })
+menuToggler.addEventListener('click', () => {
+  menu.classList.toggle('is-open');
+  menuToggler.classList.toggle('is-active');
+})
 
 
 const productsSlider = document.querySelector('.js-products-slider');
@@ -229,5 +229,17 @@ if(select) {
   const choices = new Choices(select, {
     removeItems: true,
     removeItemButton: true,
+  })
+}
+
+const accordeons = document.querySelectorAll('.js-accordeon');
+
+if(accordeons.length) {
+  accordeons.forEach(item => {
+
+    let toggleBtn = item.querySelector('.js-accordeon-head');
+    toggleBtn.addEventListener('click', function() {
+      item.classList.toggle('is-open');
+    })
   })
 }

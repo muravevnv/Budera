@@ -79,8 +79,18 @@
         background-color: #EEEEDE;
       }
 
-      .faq__item-body {
-        display: block;
+      .faq__item-desc {
+        grid-template-rows: 1fr;
+      }
+
+      .faq__item-text {
+        visibility: visible;
+        min-height: auto;
+        padding: 8px 20px 24px; 
+
+        @include media(md) {
+          padding: 4px 0 12px;
+        }
       }
     }
 
@@ -100,13 +110,16 @@
     }
 
     &-body {
-      padding: 8px 20px 24px;
+      display: grid;
+      grid-template-rows: 0fr;
+      overflow: hidden;
+      transition: grid-template-rows .7s;
       color: var(--color-grey-dark);
-      display: none;
+    }
 
-      @include media(md) {
-        padding: 4px 0 12px;
-      }
+    &-text {
+      min-height: 0;
+      visibility: hidden;
     }
 
     &-toggler {
