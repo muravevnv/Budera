@@ -4,20 +4,26 @@
     position: relative;
 
     &.is-error {
-      .form-error {
+      .form-control {
+        border-color: var(--color-error);
+      }
+
+      .form-error-icon {
         opacity: 1;
       }
     }
+  }
 
-    &--icon {
-
-      &::after {
-        position: absolute;
-        content: url('../images/map-pin.svg');
-        right: 15px;
-        top: 15px;
-      }
-    }
+  &-error-icon {
+    --size: 24px;
+    width: var(--size);
+    height: var(--size);
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: url('../images/error-icon.png') center center / var(--size) no-repeat;
+    opacity: 0;
+    pointer-events: none;
   }
 
   &-error {

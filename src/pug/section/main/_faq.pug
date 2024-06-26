@@ -5,7 +5,7 @@ section.faq.section
         .faq__title.h3  Вопросы и ответы
         .faq__desc  Познакомьтесь с наиболее часто задаваемыми вопросами. Вы можете задать свой вопрос, воспользуйтесь формой.
         form.faq__form(action="#")
-          .form-group
+          .form-group.is-error
             label.form-label(for="#") 
             input.form-control(type="text" placeholder="Ваше имя *")
             span.form-error-icon   
@@ -21,6 +21,13 @@ section.faq.section
             input(type="checkbox", name="" id="faq_condition" checked)
             label(for="faq_condition") Согласен с условиями обработки персональных данных
           button(type="submit" class="form-btn btn") Отправить вопрос 
+        .faq__result 
+          .faq__result-banner 
+            .faq__result-title Спасибо!
+            .faq__result-text 
+              p Ответ на Ваш вопрос будет рассмотрен нашими менеджерами в ближайшее время!
+              p Ожидайте ответ по телефону или электронной почте.
+          button(type="button").faq__result-btn.btn Задать еще вопрос
       .faq__list
         .faq__item.js-accordeon
           .faq__item-head.js-accordeon-head 

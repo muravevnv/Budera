@@ -23,7 +23,7 @@
 
   @media(any-hover: hover) {
     &:hover {
-      background-color: var(--color-primary); 
+      background-color: var(--color-blck-hover); 
       color: var(--color-whte);
     }
   }
@@ -38,8 +38,8 @@
 
     @media(any-hover: hover) {
       &:hover {
-        background-color: var(--color-blck); 
-        color: var(--color-whte);
+        background-color: var(--color-secondary-hover); 
+        color: var(--color-blck);
       }
     }
   }

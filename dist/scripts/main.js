@@ -243,3 +243,13 @@ if(accordeons.length) {
     })
   })
 }
+
+const inputTel = document.querySelectorAll('.js-input-tel');
+
+if(inputTel.length) {
+  inputTel.forEach(item => {
+    new IMask(item, {
+      mask: '+{7} (000) 000-00-00'
+    });
+  })
+}

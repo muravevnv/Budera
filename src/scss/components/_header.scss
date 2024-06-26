@@ -90,6 +90,23 @@
         font-weight: 500;
         padding: 4px 8px;
         line-height: 1.2;
+        transition: var(--transition);
+        border-radius: 4px;
+
+        @media(any-hover: hover) {
+
+          &:hover {
+            background-color: #EFF0EC;
+
+          }
+        }
+
+        @media(any-hover: none) {
+
+          &:active {
+            background-color: #EEEEDE;
+          }
+        }
       }
     }
   }
@@ -234,5 +251,12 @@
     color: var(--color-whte);
     border-radius: 50%;
     transition: var(--transition);
+
+    @media(any-hover: hover) {
+
+      &:hover {
+        background-color: var(--color-blck-hover);
+      }
+    }
   }
 }

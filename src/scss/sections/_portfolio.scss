@@ -82,6 +82,19 @@
       user-select: none;
       font-weight: 500;
       white-space: nowrap;
+      transition: var(--transition);
+
+      @media(any-hover: hover) {
+        &:hover {
+          background-color: #EEEEDE;
+        }
+      }
+
+      @media(any-hover: none) {
+        &:active {
+          background-color: #EEEEDE;
+        }
+      }
 
       @include media(md)  {
         padding: 9px 12px;

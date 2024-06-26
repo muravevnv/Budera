@@ -114,6 +114,12 @@
     border-radius: 4px;
     border: 1px solid var(--color-primary-light);
 
+    &.is-selected {
+      background-color: var(--color-grey-dark);
+      border-color: var(--color-grey-dark);
+      color: var(--color-whte);
+    }
+
     @include media(md)  {
       padding: 3px;
       font-size: 10px;
@@ -122,6 +128,7 @@
     &::before {
       display: inline;
       content: '+';
+      color: currentColor;
     }
   }
 

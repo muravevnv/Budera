@@ -83,7 +83,7 @@
                 <div class="products-item swiper-slide"><a class="products-item__title" href="#">Купель Exelent 250</a>
                   <div class="products-item__desc">Эта купель – лучшее, что может украсить ваш загородный участок. Инновации, стиль, идеальный объем!</div><a class="products-item__img" href="#"> <img src="./images/products/product-01.jpg" alt="Купель Exelent 250"></a>
                   <div class="products-item__details"> 
-                    <div class="products-item__detail">Термокрышка</div>
+                    <div class="products-item__detail is-selected">Термокрышка</div>
                     <div class="products-item__detail">Светодиодная подсветка</div>
                     <div class="products-item__detail">Печь</div>
                   </div>
@@ -93,7 +93,7 @@
                 <div class="products-item swiper-slide"><a class="products-item__title" href="#">Купель Perfect 300</a>
                   <div class="products-item__desc">Универсальное решение в стиле европейской классики. Для дома, для дачи, для базы отдыха.</div><a class="products-item__img" href="#"> <img src="./images/products/product-02.jpg" alt="Купель Perfect 300"></a>
                   <div class="products-item__details"> 
-                    <div class="products-item__detail">Термокрышка</div>
+                    <div class="products-item__detail is-selected">Термокрышка</div>
                     <div class="products-item__detail">Гидромассаж</div>
                     <div class="products-item__detail">Светодиодная подсветка</div>
                     <div class="products-item__detail">Печь</div>
@@ -105,7 +105,7 @@
                 <div class="products-item swiper-slide"><a class="products-item__title" href="#">Купель Exclusive 200</a>
                   <div class="products-item__desc">Украшение вашей бани. Идеально войдёт в стандартный дверной проём. Не требует сложного монтажа.</div><a class="products-item__img" href="#"> <img src="./images/products/product-03.jpg" alt="Купель Exclusive 200"></a>
                   <div class="products-item__details"> 
-                    <div class="products-item__detail">Термокрышка</div>
+                    <div class="products-item__detail is-selected">Термокрышка</div>
                     <div class="products-item__detail">Гидромассаж</div>
                     <div class="products-item__detail">Светодиодная подсветка</div>
                     <div class="products-item__detail">Печь</div>
@@ -116,7 +116,7 @@
                 <div class="products-item swiper-slide"><a class="products-item__title" href="#">Купель MegaStar</a>
                   <div class="products-item__desc">Эта купель – лучшее, что может украсить ваш загородный участок. Инновации, стиль, идеальный объем!</div><a class="products-item__img" href="#"> <img src="./images/products/product-04.jpg" alt="Купель MegaStar"></a>
                   <div class="products-item__details"> 
-                    <div class="products-item__detail">Термокрышка</div>
+                    <div class="products-item__detail is-selected">Термокрышка</div>
                     <div class="products-item__detail">Гидромассаж</div>
                     <div class="products-item__detail">Светодиодная подсветка</div>
                     <div class="products-item__detail">Печь</div>
@@ -128,7 +128,7 @@
                 <div class="products-item swiper-slide"><a class="products-item__title" href="#">Купель Exelent 250</a>
                   <div class="products-item__desc">Эта купель – лучшее, что может украсить ваш загородный участок. Инновации, стиль, идеальный объем!</div><a class="products-item__img" href="#"> <img src="./images/products/product-01.jpg" alt="Купель Exelent 250"></a>
                   <div class="products-item__details"> 
-                    <div class="products-item__detail">Термокрышка</div>
+                    <div class="products-item__detail is-selected">Термокрышка</div>
                     <div class="products-item__detail">Светодиодная подсветка</div>
                     <div class="products-item__detail">Печь</div>
                   </div>
@@ -172,7 +172,7 @@
           <form class="callback__form" action="#">
             <div class="callback__form-row"> 
               <div class="form-group form-group--icon">
-                <input class="form-control" type="text" placeholder="+7 (___) ___ __ __"><span class="form-error-icon"> </span>
+                <input class="form-control js-input-tel" type="text" placeholder="+7 (___) ___ __ __"><span class="form-error-icon"> </span>
               </div>
               <button class="form-btn btn btn--light">Заказать обратный звонок</button>
             </div>
@@ -224,7 +224,7 @@
               <div class="faq__title h3"> Вопросы и ответы</div>
               <div class="faq__desc"> Познакомьтесь с наиболее часто задаваемыми вопросами. Вы можете задать свой вопрос, воспользуйтесь формой.</div>
               <form class="faq__form" action="#">
-                <div class="form-group">
+                <div class="form-group is-error">
                   <label class="form-label" for="#"> </label>
                   <input class="form-control" type="text" placeholder="Ваше имя *"><span class="form-error-icon">  </span>
                 </div>
@@ -242,6 +242,16 @@
                 </div>
                 <button class="form-btn btn" type="submit">Отправить вопрос </button>
               </form>
+              <div class="faq__result"> 
+                <div class="faq__result-banner"> 
+                  <div class="faq__result-title">Спасибо!</div>
+                  <div class="faq__result-text"> 
+                    <p>Ответ на Ваш вопрос будет рассмотрен нашими менеджерами в ближайшее время!</p>
+                    <p>Ожидайте ответ по телефону или электронной почте.</p>
+                  </div>
+                </div>
+                <button class="faq__result-btn btn" type="button">Задать еще вопрос</button>
+              </div>
             </div>
             <div class="faq__list">
               <div class="faq__item js-accordeon">
@@ -354,7 +364,7 @@
         <div class="container"> 
           <div class="banner__wrapper"> 
             <div class="banner__title h2">Готовы <br> сделать <br> заказ ?</div>
-            <button class="banner__btn btn btn--light" type="button">Оставить заявку</button>
+            <button class="banner__btn btn btn--light js-popup-btn" type="button" data-popup="callback">Оставить заявку</button>
           </div>
         </div>
       </section>
@@ -520,7 +530,8 @@
       </div>
     </div>
     <script src="scripts/libs/swiper-bundle.min.js"></script>
-    <script src="scripts/libs/choices.min.js"></script><script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU" type="text/javascript"></script>
+    <script src="scripts/libs/choices.min.js"></script>
+    <script src="scripts/libs/imask.min.js"></script><script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU" type="text/javascript"></script>
     <script src="scripts/main.js"></script>
   </body>
 </html>
