@@ -253,3 +253,42 @@ if(inputTel.length) {
     });
   })
 }
+
+gsap.registerPlugin('ScrollTrigger'); 
+
+
+
+const bannerSection = document.querySelector('.banner');
+
+if(bannerSection) {
+  gsap.to(bannerSection, {
+    width: '100vw',
+    borderRadius: 0,
+    ease: 'none',
+    duration: 1.4,
+    scrollTrigger: {
+      trigger: bannerSection,
+      start: 'top 90%',
+      end: 'top center',
+      scrub: true
+    }
+  })
+}
+
+
+const portfolioSection = document.querySelector('[data-portfolio-section]');
+
+if(bannerSection) {
+  const portfolioBlock = document.querySelector('[data-portfolio-block]');
+
+  gsap.to(portfolioBlock, {
+    scale: 1,
+    ease: 'none',
+    scrollTrigger: {
+      trigger: portfolioSection,
+      start: 'top bottom',
+      end: 'bottom bottom',
+      scrub: true
+    }
+  })
+}

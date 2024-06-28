@@ -1,14 +1,18 @@
 .banner {
+  max-width: 100%;
+  width: var(--container-width);
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 8px;
+  background: url('../images/banner/banner.jpg') center center / cover no-repeat;
 
   @include media(md) {
     padding: 12px 0;
+    width: 80vw;
   } 
   
   &__wrapper {
     padding: 90px 40px;
-    overflow: hidden;
-    border-radius: 8px;
-    background: url('../images/banner/banner.jpg') center center / cover no-repeat;
 
     @include media(sm) {
       padding: 24px 20px 12px;

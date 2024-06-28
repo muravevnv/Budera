@@ -1,8 +1,26 @@
-section.section.portfolio-main 
+section.section.portfolio-main(data-portfolio-section)
   .container 
     .portfolio-main__wrapper
-      picture.portfoli-main__img 
-        img(src="./images/portfolio/portfolio.png", alt="")
+      .portfolio-main__gallery 
+        .portfolio-main__gallery-row 
+          .portfolio-main__gallery-img 
+            img(src="./images/portfolio-main/img-01.png", alt="")
+          .portfolio-main__gallery-img 
+            img(src="./images/portfolio-main/img-02.png", alt="")
+        .portfolio-main__gallery-row 
+          .portfolio-main__gallery-img 
+            img(src="./images/portfolio-main/img-03.png", alt="")
+          .portfolio-main__gallery-img.portfolio-main__gallery-img--main(data-portfolio-block)
+            img(src="./images/portfolio-main/img-05.png", alt="")
+          .portfolio-main__gallery-img 
+            img(src="./images/portfolio-main/img-04.png", alt="")
+        .portfolio-main__gallery-row 
+          .portfolio-main__gallery-img 
+            img(src="./images/portfolio-main/img-06.png", alt="")
+          .portfolio-main__gallery-img 
+            img(src="./images/portfolio-main/img-07.png", alt="")
+      //- picture.portfoli-main__img 
+      //-   img(src="./images/portfolio/portfolio.png", alt="")
       .portfolio-main__info 
         h2.portfolio-main__title.h2 Портфолио
         a(href="#").portfolio-main__btn.btn.btn--light Смотреть все проекты

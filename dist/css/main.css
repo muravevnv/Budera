@@ -1346,11 +1346,17 @@ textarea.form-control {
 .video-item--main {
   grid-row: 1/3;
 }
-.banner__wrapper {
-  padding: 90px 40px;
+
+.banner {
+  max-width: 100%;
+  width: var(--container-width);
+  margin: 0 auto;
   overflow: hidden;
   border-radius: 8px;
   background: url("../images/banner/banner.jpg") center center/cover no-repeat;
+}
+.banner__wrapper {
+  padding: 90px 40px;
 }
 .banner__title {
   margin-bottom: 40px;
@@ -1720,6 +1726,35 @@ textarea.form-control {
 .portfolio-main__title {
   color: var(--color-whte);
 }
+.portfolio-main__gallery {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  gap: 60px;
+  overflow: hidden;
+}
+.portfolio-main__gallery-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 60px;
+}
+.portfolio-main__gallery-img--main {
+  -webkit-transform: scale(6);
+  transform: scale(6);
+}
 .portfolio-main__info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1763,7 +1798,7 @@ textarea.form-control {
   padding: 14px 24px;
   border-radius: 100px;
   text-align: center;
-  background-color: #F7F7EF;
+  background-color: #f7f7ef;
   border: none;
   outline: none;
   -webkit-user-select: none;
@@ -1776,7 +1811,7 @@ textarea.form-control {
   transition: var(--transition);
 }
 .portfolio__nav-btn.is-selected {
-  background-color: #E4E4D4;
+  background-color: #e4e4d4;
 }
 .portfolio__content {
   display: none;
@@ -1806,7 +1841,7 @@ textarea.form-control {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  background-color: #F7F7EF;
+  background-color: #f7f7ef;
   border: 4px;
   overflow: hidden;
   border-radius: 4px;
@@ -2228,6 +2263,12 @@ textarea.form-control {
     left: 8px;
     top: 17px;
   }
+  .portfolio-main__gallery {
+    gap: 32px;
+  }
+  .portfolio-main__gallery-row {
+    gap: 32px;
+  }
   .advantages__container {
     max-width: 600px;
   }
@@ -2329,6 +2370,7 @@ textarea.form-control {
   }
   .banner {
     padding: 12px 0;
+    width: 80vw;
   }
   .sertificats {
     padding: 24px 0;
@@ -2816,6 +2858,12 @@ textarea.form-control {
     width: 100%;
     text-align: center;
   }
+  .portfolio-main__gallery {
+    gap: 7px;
+  }
+  .portfolio-main__gallery-row {
+    gap: 7px;
+  }
   .portfolio-main__info {
     width: 100%;
     inset: 0;
@@ -2895,7 +2943,7 @@ textarea.form-control {
     background-color: #EFF0EC;
   }
   .portfolio__nav-btn:hover {
-    background-color: #EEEEDE;
+    background-color: #eeeede;
   }
 }
 @media (any-hover: none) {
@@ -2906,7 +2954,7 @@ textarea.form-control {
     background-color: #EEEEDE;
   }
   .portfolio__nav-btn:active {
-    background-color: #EEEEDE;
+    background-color: #eeeede;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,9 +1,8 @@
 .portfolio-main {
-
   &__wrapper {
     position: relative;
 
-    @include media(sm)  {
+    @include media(sm) {
       padding: 48px 0;
     }
   }
@@ -11,10 +10,49 @@
   &__title {
     color: var(--color-whte);
 
-    @include media(sm)  {
+    @include media(sm) {
       color: var(--color-blck);
       width: 100%;
       text-align: center;
+    }
+  }
+
+  &__gallery {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    gap: 60px;
+    overflow: hidden;
+
+    @include media(lg) {
+      gap: 32px;
+    }
+
+    @include media(sm) {
+      gap: 7px;
+    }
+
+    &-row {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 60px;
+
+      @include media(lg) {
+        gap: 32px;
+      }
+
+      @include media(sm) {
+        gap: 7px;
+      }
+    }
+
+    &-img {
+
+      &--main {
+        transform: scale(6);
+      }
     }
   }
 
@@ -38,8 +76,7 @@
   }
 
   &__btn {
-
-    @include media(sm)  {
+    @include media(sm) {
       width: 100%;
     }
   }
@@ -56,7 +93,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     gap: 16px;
     margin-bottom: 40px;
 
@@ -76,7 +113,7 @@
       padding: 14px 24px;
       border-radius: 100px;
       text-align: center;
-      background-color: #F7F7EF;
+      background-color: #f7f7ef;
       border: none;
       outline: none;
       user-select: none;
@@ -84,37 +121,37 @@
       white-space: nowrap;
       transition: var(--transition);
 
-      @media(any-hover: hover) {
+      @media (any-hover: hover) {
         &:hover {
-          background-color: #EEEEDE;
+          background-color: #eeeede;
         }
       }
 
-      @media(any-hover: none) {
+      @media (any-hover: none) {
         &:active {
-          background-color: #EEEEDE;
+          background-color: #eeeede;
         }
       }
 
-      @include media(md)  {
+      @include media(md) {
         padding: 9px 12px;
         font-size: 13px;
       }
 
       &.is-selected {
-        background-color: #E4E4D4;
+        background-color: #e4e4d4;
       }
     }
   }
 
   &__content {
     display: none;
-    
+
     &.is-active {
       display: block;
     }
   }
-  
+
   &__gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -139,7 +176,7 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      background-color: #F7F7EF;
+      background-color: #f7f7ef;
       border: 4px;
       overflow: hidden;
       border-radius: 4px;
@@ -169,7 +206,7 @@
       &--row-2 {
         grid-row: span 2;
       }
-  
+
       &--col-2 {
         grid-column: span 2;
       }

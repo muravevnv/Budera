@@ -183,10 +183,24 @@
           </form>
         </div>
       </section>
-      <section class="section portfolio-main"> 
+      <section class="section portfolio-main" data-portfolio-section>
         <div class="container"> 
           <div class="portfolio-main__wrapper">
-            <picture class="portfoli-main__img"> <img src="./images/portfolio/portfolio.png" alt=""></picture>
+            <div class="portfolio-main__gallery"> 
+              <div class="portfolio-main__gallery-row"> 
+                <div class="portfolio-main__gallery-img"> <img src="./images/portfolio-main/img-01.png" alt=""></div>
+                <div class="portfolio-main__gallery-img"> <img src="./images/portfolio-main/img-02.png" alt=""></div>
+              </div>
+              <div class="portfolio-main__gallery-row"> 
+                <div class="portfolio-main__gallery-img"> <img src="./images/portfolio-main/img-03.png" alt=""></div>
+                <div class="portfolio-main__gallery-img portfolio-main__gallery-img--main" data-portfolio-block><img src="./images/portfolio-main/img-05.png" alt=""></div>
+                <div class="portfolio-main__gallery-img"> <img src="./images/portfolio-main/img-04.png" alt=""></div>
+              </div>
+              <div class="portfolio-main__gallery-row"> 
+                <div class="portfolio-main__gallery-img"> <img src="./images/portfolio-main/img-06.png" alt=""></div>
+                <div class="portfolio-main__gallery-img"> <img src="./images/portfolio-main/img-07.png" alt=""></div>
+              </div>
+            </div>
             <div class="portfolio-main__info"> 
               <h2 class="portfolio-main__title h2">Портфолио</h2><a class="portfolio-main__btn btn btn--light" href="#">Смотреть все проекты</a>
             </div>
@@ -531,7 +545,9 @@
     </div>
     <script src="scripts/libs/swiper-bundle.min.js"></script>
     <script src="scripts/libs/choices.min.js"></script>
-    <script src="scripts/libs/imask.min.js"></script><script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU" type="text/javascript"></script>
+    <script src="scripts/libs/imask.min.js"></script>
+    <script src="scripts/libs/gsap.min.js"></script>
+    <script src="scripts/libs/ScrollTrigger.min.js"></script><script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU" type="text/javascript"></script>
     <script src="scripts/main.js"></script>
   </body>
 </html>
