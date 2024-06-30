@@ -4,7 +4,7 @@
   margin: 0 auto;
   overflow: hidden;
   border-radius: 8px;
-  background: url('../images/banner/banner.jpg') center center / cover no-repeat;
+  background: url('../images/banner/banner.jpg') center center / 100vw no-repeat;
 
   @include media(md) {
     padding: 12px 0;
